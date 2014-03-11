@@ -1,0 +1,180 @@
+/******************************* 
+		BODY STYLES
+*******************************/
+body {
+	background: url(../img/bg-img.png) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	font-family: Helvetica, sans-serif;
+	color: #fff;
+}
+
+/*.logo {
+	background: url(../img/logo.png) no-repeat;
+	background-size: 100%;
+	height: 308px;
+	top: 0px;
+	text-indent: -9999px;
+}*/
+
+.title {
+	color: #fff;
+}
+
+.red {
+	color: #a02900;
+}
+
+.cart {
+	padding-left: 0.625em;
+	border-left: solid 1px #fff;
+	margin-left: 0.625em;
+}
+
+.top-bar {
+	background:transparent;
+}
+
+.top-bar-section ul {
+	background:transparent;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background:transparent;
+}
+
+.top-bar-section ul li > a {
+	background:transparent;
+
+}
+
+/******************************* 
+		HEADER STYLES
+*******************************/
+header {
+	background: url(../img/header-img.png) no-repeat; 
+  	background-size: 100%;
+  	height: 580px;
+  	margin-bottom: 1.25em;
+}
+
+#logo {
+	margin-top: -1.8em;
+}
+
+/******************************* 
+	MISSION STATEMENT STYLES
+*******************************/
+.ms {
+	background-image: url('../img/wood_bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 410px; 
+	width: 966px;
+}
+
+.ms h3 {
+	background-image: url('../img/red_bg.png');
+	background-repeat: no-repeat;
+	margin: 80px 0 30px 100px;
+}
+
+.ms p {
+	margin-left: 100px;
+	width: 600px;
+	font-size: 1.25em;
+}
+
+/******************************* 
+		NEWS STYLES
+*******************************/
+.news {
+	background: url(../img/news_bg.png) no-repeat;
+  	background-size: 100%;
+  	height: 400px;
+}
+
+.news-deets {
+	margin-left: 75px;
+	margin-top: 75px;
+}
+
+/******************************* 
+		PRODUCT STYLES
+*******************************/
+.products {
+	text-align: center;
+}
+
+.products img {
+	padding: 20px 0;
+}
+
+/******************************* 
+		FOOTER STYLES
+*******************************/
+footer {
+	border-top: solid 1px #fff;
+	padding: 1.25em;
+	margin-top: 1.8em;
+}
+
+#footnav li a {
+	border-right: solid 1px #a02900;
+	font-size: 1em;
+	line-height: 30px;
+}
+
+#footnav li a:lastchild {
+	border-right: none;
+}
+
+.social img {
+	height: 30px;
+	width: 30px;
+}
+/******************************* 
+		Contact Page
+*******************************/
+label {
+	color: #fff;
+}
+textarea {
+	height: 250px;
+}
+
+#message {
+	font-size: 1.5em;
+}
+/******************************* 
+		ProStaff Page
+*******************************/
+.showAll1  {
+	display: none;
+}
+.showAll2  {
+	display: none;
+}
+.showAll3  {
+	display: none;
+}
+.showAll4  {
+	display: none;
+}
+.showAll5  {
+	display: none;
+}
+.showAll6  {
+	display: none;
+}
+.showAll7  {
+	display: none;
+}
+.showAll8  {
+	display: none;
+}
+.showAll9  {
+	display: none;
+}
