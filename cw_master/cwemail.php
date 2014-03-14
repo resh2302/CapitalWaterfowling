@@ -4,8 +4,9 @@ require_once 'Mail.php';
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $email  = $_POST['email'];
-$msg = $_POST['msg'];
+$msg =  $_POST['msg'];
 $is_body_html = true;
+$to = 'dustin@capitalwaterfowling.com';
 
 echo send_email($fname, $lname, $email, $msg, $is_body_html);
 
@@ -28,14 +29,18 @@ function send_email($fname, $lname, $email, $msg, $is_body_html = false) {
 
     // Set the headers
     $headers = array();
-    $headers['From'] = $from;
-    $headers['To']  = $to;
-    $headers['Subject'] = $subject;
+    // $headers['fname'] = $fname;
+    // $headers['lname']  = $lname;
+    $headers['From'] = $email;
+    $headers['To'] = $to;
+    $headers['Subject'] = 'Contact us - Capital Waterfowling';
     if ($is_body_html) {
         $headers['Content-type']  = 'text/html';
     }
 
     // Send the email
+
+    $body = "Name : ".$fname." ".$lname."<br/>".$msg;
 
     $result = $mailer->send($recipients, $headers, $body);
     // Check the result and throw an error if one exists
