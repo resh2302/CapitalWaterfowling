@@ -56,12 +56,48 @@ body {
 header {
 	background: url(../img/header-img.png) no-repeat; 
   	background-size: 100%;
-  	height: 580px;
+  	height: 670px;
   	margin-bottom: 1.25em;
+  	margin-bottom: 0px;
+}
+
+header .row {
+
+	max-width: 83.5rem;
+
 }
 
 #logo {
 	margin-top: -1.8em;
+}
+
+#main_nav ul li {
+	margin-right:1em;
+}
+
+#main_nav ul li a {
+	font-size:14px;
+}
+
+.top-bar #top_bar_hide {
+	display:none;
+}
+
+.fi-shopping-cart {
+	font-size:30px;
+}
+
+#shopping_p, .fi-shopping-cart {
+	vertical-align:middle;
+}
+
+#shopping_p {
+	color:#fff;
+}
+
+button.small, .button.small {
+	padding-top:10px;
+	padding-bottom:10px;
 }
 
 /******************************* 
@@ -72,7 +108,7 @@ header {
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 410px; 
-	width: 966px;
+	width: 100%;
 }
 
 .ms h3 {
@@ -121,19 +157,47 @@ footer {
 	margin-top: 1.8em;
 }
 
-#footnav li a {
-	border-right: solid 1px #a02900;
+#footnav  {
+	
 	font-size: 1em;
 	line-height: 30px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-#footnav li a:lastchild {
+#footnav li {
+	border-right: solid 3px #a02900;
+	display:inline-block;
+	padding-right: 1rem;
+	padding-left: 1rem;
+
+}
+
+#footnav li a {
+	color: #fff;
+}
+
+/*#footnav li a:lastchild {
 	border-right: none;
+}*/
+
+.social {
+	list-style-type: none;
 }
 
-.social img {
-	height: 30px;
-	width: 30px;
+.social  li {
+	display:inline-block;
+	padding-right: 1rem;
+	padding-left: 1rem;
+
+}
+
+
+
+.socialImg img {
+	height: 40px;
+	width: 40px;
 }
 /******************************* 
 		ProStaff Page
@@ -165,6 +229,7 @@ footer {
 .showAll9  {
 	display: none;
 }
+<<<<<<< HEAD
 /******************************* 
 		Contact Page
 *******************************/
@@ -177,4 +242,211 @@ textarea {
 
 #message {
 	font-size: 1.5em;
+=======
+
+/******************************* 
+		Media Query
+*******************************/
+
+@media (max-width: 1024px)  {
+
+	header {
+
+	  	height: 480px;
+	  
+	}
+
+	
+}
+
+
+@media (max-width: 768px) {
+
+	#main_nav ul li {
+		margin-right:0em;
+	}
+
+	#main_nav ul li a {
+		font-size:13px;
+	}
+
+	.top-bar-section li:not(.has-form) a:not(.button) {
+	padding: 0 14px;
+
+	}
+
+	.ms {
+	background-image:none;
+	}
+
+	header {
+		
+	  	height: 353px;
+	 
+	}
+
+	.ms h3 {
+
+	/*margin: 32px 0 30px 100px;*/
+	}
+
+	#footnav li {
+	
+	padding-right: .5rem;
+	padding-left: .5rem;
+
+}
+
+	#footnav li a {
+	color: #fff;
+	font-size:14px;
+}
+
+
+
+
+
+}
+
+@media (max-width: 480px) {
+
+	footer {
+	border-top: solid 0px #fff;
+	padding: 1.25em;
+	margin-top: 1.8em;
+}
+
+	header {
+	background: url(../img/header-img-mobile.png) no-repeat; 
+  	background-size: 100%;
+  	height: 347px;
+  	
+	}
+
+	body {
+	background: none; 
+	background-color:#000;
+	}
+
+
+	
+
+	.top-bar {
+		background:#333333;
+		width: 100%;
+	}
+
+	.top-bar-section ul {
+		background:#333333;
+	}
+
+	.top-bar-section li:not(.has-form) a:not(.button) {
+		background:#333333;
+	}
+
+	.top-bar-section ul li > a {
+		background:#333333;
+
+	}
+
+	#main_nav ul li a {
+		margin-right: 3px;
+
+	}
+
+	#main_nav_wrapper {
+		padding-right:0px;
+		padding-left:0px;
+	}
+
+	#logo_wrapper {
+
+		padding-right:0px;
+		padding-left:0px;
+
+	}
+
+	#cart_wrapper {
+	padding-right: 0px;
+	padding-left: 0px;
+	background-color: #f04124;
+	overflow: hidden;
+	height: 45px;
+	}
+
+
+	.button.small {
+	padding-top: 6px;
+	width: 100%;
+	}
+
+
+
+	.ms {
+	background-image:none;
+	}
+
+	.ms p {
+	margin-left: 0px;
+	width: 90%;
+	font-size: 1em;
+	margin: 0 auto;
+	}
+
+	.ms h3 {
+	/*margin: 32px 0 30px 0px;*/
+	margin-top: 0px;
+
+	}
+
+	h3 {
+	/*margin: 32px 0 30px 0px;*/
+	margin-top: 0px;
+	}
+
+
+	.product_line {
+		border-color:white;
+		border-bottom: solid 1px;
+		display: inline-block;
+		text-align:center;
+
+	}
+
+	footer {
+		padding:0px;
+	}
+
+	#footer_wrapper {
+		background-color:#a02900;
+		height:auto;
+		padding-right:0px;
+		padding-left:0px;
+	}
+
+	#footnav  {
+		width:100%;
+		text-align:center;
+	}
+
+
+	#footnav li {
+
+		display:block;
+		border-right: 0px;
+		padding:.5em;
+		border-bottom:#fff solid 1px;
+		
+	}
+
+	.social {
+
+	text-align: center;
+	width: 100%;
+	padding:1em;
+
+	}
+
+
+>>>>>>> FETCH_HEAD
 }
