@@ -6,13 +6,13 @@ $lname = $_POST['lname'];
 $email  = $_POST['email'];
 $msg =  $_POST['msg'];
 $is_body_html = true;
-
+$to = 'dustin@capitalwaterfowling.com';
 
 echo send_email($fname, $lname, $email, $msg, $is_body_html);
 
 function send_email($fname, $lname, $email, $msg, $is_body_html = false) {
    
-    $to = 'dustin@capitalwaterfowling.com';
+
     $smtp = array();
     
     $smtp['host'] = 'capitalwaterfowlingc.netfirms.com';
@@ -40,11 +40,12 @@ function send_email($fname, $lname, $email, $msg, $is_body_html = false) {
 
     // Send the email
 
-    $body = "Name : ".$fname." ".$lname."<br/> Email : ".$email."<br/> Message : <br/>".$msg;
+    $body = "Name : ".$fname." ".$lname."<br/>".$msg;
 
     $result = $mailer->send($recipients, $headers, $body);
     // Check the result and throw an error if one exists
     return $result;
 }
+
 
 ?>

@@ -45,26 +45,26 @@
  <!-- ****************************** -->
  <!--        CONTACT SECTION         -->
  <!-- ****************************** -->
-<form action="cwemail.php" method="post">
+<form>
   <div class="row">
       <h3 class="title">Contact Us!</h3>
 
       <div class="row">
         <div class="large-4 columns">
-          
+          <form action="cwemail.php" method="post">
             <!-- <label id="left-label" class="left inline">First Name</label> -->
-            <input type="text" name="fname" Placeholder="First Name">
+            <input type="text" for="left-label" name="fname" Placeholder="First Name">
           <br />
             <!-- <label id="left-label" class="left inline">Last Name</label> -->
-            <input type="text" name="lname" Placeholder="Last Name">
+            <input type="text" for="left-label" name="lname" Placeholder="Last Name">
           <br />
             <!-- <label id="left-label" class="left inline">Email</label> -->
-            <input type="text" name="email" Placeholder="Email Address">
+            <input type="text" for="left-label" name="email" Placeholder="Email Address">
           <br />
-            <textarea name="msg" Placeholder="Enter your message here."></textarea>
+            <textarea type="text" name="msg" Placeholder="Enter your message here."></textarea>
           <br />
             <input type="submit" class="small alert button" id="right-label" value="Send"/>
-          
+          </form>
         </div>
         <div class="large-6 columns">
           <p id="message">If you have any questions about our products or just simply want to get in touch with us, complete this contact form and we will respond to you as soon as we can!</p>
