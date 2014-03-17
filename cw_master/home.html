@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Capital Waterfowling</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="font/foundation-icons/foundation-icons.css" />
     <link rel="stylesheet" href="css/xmain.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -14,82 +15,113 @@
  <!-- ****************************** -->
    <header> 
     <div class="row">
-      <div class="large-3 columns logo">
+      <div class="small-4 medium-3 columns logo" id="logo_wrapper">
         <img src="img/logo.png" alt="Captial Waterfowling Logo" id="logo" />
         <!-- Capital Waterfowling -->
+      </div> <!-- end large-3 -->
+      <div class="small-4 medium-7 columns" id="main_nav_wrapper">
+        <nav class="top-bar" id="main_nav" data-topbar> 
+          <ul class="title-area"> 
+            <li class="name" > 
+
+
+              
+            </li>
+             <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li> 
+           </ul>
+            <section class="top-bar-section"> <!-- Right Nav Section --> 
+              <ul class="right"> 
+                <li><a href="home.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="prostaff.html">Pro Staff</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="contact.html">Contact</a></li>
+               
+            </ul> <!-- Left Nav Section --> 
+         
+            </section> 
+          </nav>
+
+      </div> <!-- end large-6  -->
+      <div class="small-4 medium-2 columns" id="cart_wrapper">
+
+        <p class="small alert button">
+          <a id="shopping_p" href="#" >MY CART </a> 
+          <i class="fi-shopping-cart"></i>
+        </p>
+
       </div>
-      <div class="large-9 columns">
-        <nav class="top-bar">
-          <!-- Mobile Nav -->
-            <ul class="title-area">
-                <li class="name"></li>
-                <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-            </ul>
-            <!-- Desktop / Tablet Nav -->
-            <section class="top-bar-section">
-              <ul class="left">
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="news.html">News</a></li>
-                  <li><a href="prostaff.html">Pro Staff</a></li>
-                  <li><a href="tutorials.html">Tutorials</a></li>
-                  <li><a href="store.html">Store</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-              </ul>
-              <ul class="right">
-                <li><a href="#" class="small alert button">Shopping Cart<img src="img/shopping_cart.png" class="cart" /></a></li>
-              </ul>
-          </section>
-        </nav>
-      </div>
-    </div>
+
+    </div> <!-- end row -->
+
+     
+
+
   </header>
  <!-- ****************************** -->
  <!--         MISSION SECTION        -->
  <!-- ****************************** -->
   <article>   
     <div class="row">
-      <div class="large-9 columns ms">
-	      <h3 class="title">Mission Statement</h3>
-	      <p>Our passion for waterfowling and the outdoors is second to none. Together we have harnessed this passion to create products for hunters, by hunters. We are stopping at nothing to offer the best waterfowling products in all of Canada.</p>
+      <div class="small-12 columns ms">
+        <h3 class="title">Mission Statement</h3>
+        <p>Our passion for waterfowling and the outdoors is second to none. Together we have harnessed this passion to create products for hunters, by hunters. We are stopping at nothing to offer the best waterfowling products in all of Canada.</p>
       </div>
     </div>
   </article>
  <!-- ****************************** -->
  <!--         NEWS SECTION           -->
  <!-- ****************************** -->
- <article>
-    <div class="row news">
-      <div class="large-7 columns news-deets">
-        <h3 class="title">Eric Gryba</h3>
-        <h4 class="red">Autograph Signing</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam metus purus, venenatis tincidunt leo sed, gravida eleifend sem. Aenean non semper libero. Nulla et semper justo. Maecenas quis nunc at eros lacinia congue.</p>
-        <p><a href="news.html#news1" class="small alert button">View more details &#10142;</a></p>
-      </div>
-      <div class="large-5 columns">
-        <!-- <img src="#" /> -->
-      </div>
-    </div>
-  </article>
+
  <!-- ****************************** -->
  <!--       PRODUCTS SECTION         -->
  <!-- ****************************** -->
   <article>
     <div class="row">
       <h3 class="title">Feature Products</h3>
+      
       <div class="large-4 columns products">
-        <img src="img/product1.png" />
-        <h4 class="title">Duck Calls</h4>
-        <p><a href="store.html#duckCalls" class="small alert button">View more &#10142;</a></p>
+          <div class="row product_line">
+            <div class="medium-12 small-6 columns">
+            <img src="img/product1.png" />
+           </div>
+
+           <div class="medium-12 small-6 columns">
+            <h4 class="title">Duck Calls</h4>
+            <p><a href="store.html#duckCalls" class="small alert button">View more &#10142;</a></p>
+           </div>
+          </div> <!-- end row -->
+      
       </div>
-      <div class="large-4 columns products">
-        <img src="img/product2.png" />
-        <h4 class="title">Goose Calls</h4>
-        <p><a href="store.html#gooseCalls" class="small alert button">View more &#10142;</a></p>
+      
+       <div class="large-4 columns products">
+          <div class="row product_line">
+            <div class="medium-12 small-6 columns">
+            <img src="img/product2.png" />
+           </div>
+
+           <div class="medium-12 small-6 columns">
+            <h4 class="title">Duck Calls</h4>
+            <p><a href="store.html#gooseCalls" class="small alert button">View more &#10142;</a></p>
+           </div>
+          </div> <!-- end row -->
+      
       </div>
-      <div class="large-4 columns products">
-        <img src="img/product3.png" />
-        <h4 class="title">Apparel</h4>
-        <p><a href="store.html#apparel" class="small alert button">View more &#10142;</a></p>
+
+
+        <div class="large-4 columns products">
+          <div class="row product_line">
+            <div class="medium-12 small-6 columns">
+            <img src="img/product3.png" />
+           </div>
+
+           <div class="medium-12 small-6 columns">
+            <h4 class="title">Duck Calls</h4>
+            <p><a href="store.html#gooseCalls" class="small alert button">View more &#10142;</a></p>
+           </div>
+          </div> <!-- end row -->
+      
       </div>
     </div>
   </article>
@@ -97,15 +129,10 @@
  <!--         FOOTER SECTION         -->
  <!-- ****************************** -->            
    <footer> 
-      <div class="large-12 columns">
-        <nav class="top-bar">
-            <ul class="title-area">
-            <!-- Mobile Nav -->
-                <li class="name"></li>
-                <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-            </ul>
-            <!-- Desktop / Tablet Nav -->
-            <section class="top-bar-section">
+
+      <div class="large-12 columns" id="footer_wrapper">
+       
+
               <ul class="left" id="footnav">
                   <li><a href="home.html">Home</a></li>
                   <li><a href="news.html">News</a></li>
@@ -115,13 +142,13 @@
                   <li><a href="contact.html">Contact</a></li>
               </ul>
               <!-- Social Media Icons -->
-              <ul class="right">
-                  <li><a href="#" class="social"><img src="img/facebook.png" /></a></li>
-                  <li><a href="#" class="social"><img src="img/twitter.png" /></a></li>
-                  <li><a href="#" class="social"><img src="img/youtube.png" /></a></li>
+              <ul class="right social">
+                  <li><a href="#" class="socialImg"><img src="img/facebook.png" /></a></li>
+                  <li><a href="#" class="socialImg"><img src="img/twitter.png" /></a></li>
+                  <li><a href="#" class="socialImg"><img src="img/youtube.png" /></a></li>
               </ul>
-            </section>
-          </nav>
+            
+        
         </div>
     </footer>
     <script src="js/vendor/jquery.js"></script>
