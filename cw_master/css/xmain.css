@@ -111,7 +111,7 @@ button.small, .button.small {
 	width: 100%;
 }
 
-/*.ms */h3 {
+.ms h3 {
 	background-image: url('../img/red_bg.png');
 	background-repeat: no-repeat;
 	margin: 80px 0 30px 100px;
@@ -229,7 +229,6 @@ footer {
 .showAll9  {
 	display: none;
 }
-<<<<<<< HEAD
 /******************************* 
 		Contact Page
 *******************************/
@@ -243,7 +242,10 @@ textarea {
 #message {
 	font-size: 1.5em;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> FETCH_HEAD
 /******************************* 
 		Media Query
 *******************************/
@@ -384,7 +386,6 @@ textarea {
 
 	.ms {
 	background-image:none;
-	height: auto;
 	}
 
 	.ms p {
@@ -394,20 +395,15 @@ textarea {
 	margin: 0 auto;
 	}
 
-	/*.ms h3 {
-	margin: 32px 0 30px 0px;
-	
+	.ms h3 {
+	/*margin: 32px 0 30px 0px;*/
+	margin-top: 0px;
 
-	}*/
+	}
 
 	h3 {
 	margin: 32px 0 32px 13px;
 	margin-top: 0px;
-	}
-
-	.ps {
-	padding-right: 20px;
-	padding-left: 20px;
 	}
 
 
@@ -417,10 +413,6 @@ textarea {
 		display: inline-block;
 		text-align:center;
 
-	}
-
-	.ps_des{
-		margin-top: 63px;
 	}
 
 	footer {
@@ -456,8 +448,11 @@ textarea {
 	padding:1em;
 
 	}
+<<<<<<< HEAD
 
 	
 
 
 }
+=======
+>>>>>>> FETCH_HEAD
