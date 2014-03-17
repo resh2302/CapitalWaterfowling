@@ -242,7 +242,7 @@ textarea {
 
 #message {
 	font-size: 1.5em;
-=======
+}
 
 /******************************* 
 		Media Query
@@ -401,7 +401,7 @@ textarea {
 	}*/
 
 	h3 {
-	/*margin: 32px 0 30px 0px;*/
+	margin: 32px 0 32px 13px;
 	margin-top: 0px;
 	}
 
@@ -457,10 +457,7 @@ textarea {
 
 	}
 
-	h3 {
-		margin: 32px 0 32px 13px;
-	}
-
+	
 
 
 }
