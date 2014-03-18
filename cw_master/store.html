@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="font/foundation-icons/foundation-icons.css" />
     <link rel="stylesheet" href="css/xmain.css" />
-    <script src="js/modernizr.js"></script>
+    <!--<script src="js/modernizr.js"></script>-->
   </head>
   <body>
  <!-- ****************************** -->
@@ -65,12 +65,15 @@
         <h4 class="title">Duck Call 1</h4>
         <h5 class="red">$99.99</h5>
         <!-- <p><a href="#" class="small alert button test-popup-link">View more details &#10142;</a></p> -->
-        <br><input type=hidden name="storeid" value="*2cfb6eedbf6871e0a41083e6f069e0492c08cfbf4c9b488e">
+        <form action="http://shopsite.netfirms.com/ss11.2/sc/order.cgi" method="post">
+<br><input type=hidden name="storeid" value="*2cfb6eedbf6871e0a41083e6f069e0492c08cfbf4c9b488e">
 <input type=hidden name="dbname" value="products">
 <input type=hidden name="function" value="add">
 <input type=hidden name="guid" value="0826c772-aec7-11e3-98bb-00219b8b13ea">
-<input type=image src="https://shopsite.netfirms.com/ss11.2/shopsite-images/en-CA/buttons/3col-blue/btn-addtocart.png" border="0" align="bottom" alt="Add to Cart" name="Add to Cart">
-<input type=image src="https://shopsite.netfirms.com/ss11.2/shopsite-images/en-CA/buttons/3col-blue/btn-viewcart.png" border="0" align="bottom" alt="View Cart" name="View Cart">
+<input type=image src="http://shopsite.netfirms.com/ss11.2/shopsite-images/en-CA/buttons/3col-red/btn-addtocart.png" hspace=3 vspace=3 border="0" align="bottom" alt="Add to Cart" name="Add to Cart">
+<input type=image src="http://shopsite.netfirms.com/ss11.2/shopsite-images/en-CA/buttons/3col-red/btn-viewcart.png" hspace=3 vspace=3 border="0" align="bottom" alt="View Cart" name="View Cart">
+</form>
+
 
       </div>
       <div class="large-4 columns">
@@ -95,7 +98,16 @@
         <img src="img/product2.png" alt="Goose Call" />
         <h4 class="title">Goose Call 1</h4>
         <h5 class="red">$99.99</h5>
-        <p><a href="#" class="small alert button show">View more details &#10142;</a></p>
+        <!--<p><a href="#" class="small alert button show">View more details &#10142;</a></p>-->
+        <form action="http://shopsite.netfirms.com/ss11.2/sc/order.cgi" method="post">
+<br><input type=hidden name="storeid" value="*2cfb6eedbf6871e0a41083e6f069e0492c08cfbf4c9b488e">
+<input type=hidden name="dbname" value="products">
+<input type=hidden name="function" value="add">
+<input type=hidden name="guid" value="7ea82044-aec7-11e3-9369-00219b8b13ea">
+<input type=image src="http://shopsite.netfirms.com/ss11.2/shopsite-images/en-CA/buttons/3col-red/btn-addtocart.png" hspace=3 vspace=3 border="0" align="bottom" alt="Add to Cart" name="Add to Cart">
+<input type=image src="http://shopsite.netfirms.com/ss11.2/shopsite-images/en-CA/buttons/3col-red/btn-viewcart.png" hspace=3 vspace=3 border="0" align="bottom" alt="View Cart" name="View Cart">
+</form>
+
       </div>
       <div class="large-4 columns">
         <img src="img/product2.png" alt="Goose Call" />
@@ -165,9 +177,6 @@
 
     <script>
       $(document).foundation();
-      $('.test-popup-link').magnificPopup({ 
-      type: 'image'
-      });
     </script>
   </body>
 </html>
