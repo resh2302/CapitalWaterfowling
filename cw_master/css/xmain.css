@@ -2,7 +2,7 @@
 		BODY STYLES
 *******************************/
 body {
-	background: url(../img/bg-img.png) no-repeat center center fixed; 
+	background: url(../img/bg-img.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -54,16 +54,19 @@ body {
 		HEADER STYLES
 *******************************/
 header {
-	background: url(../img/header-img.png) no-repeat; 
+	background: url(../img/header-img.jpg) no-repeat; 
   	background-size: 100%;
-  	height: 670px;
-  	margin-bottom: 1.25em;
+  	height: 659px;
+
+	width: 88%;
+	margin: 0 auto;
   	margin-bottom: 0px;
 }
 
 header .row {
 
 	max-width: 83.5rem;
+
 
 }
 
@@ -76,8 +79,23 @@ header .row {
 }
 
 #main_nav ul li a {
-	font-size:14px;
+	font-size:16px;
+	font-family: 'Roboto Slab', serif;
+	text-shadow: 3px 3px 14px #111;
+	text-transform:uppercase;
 }
+
+#main_nav ul li a:hover {
+	border-bottom:3px solid #f04124;
+	background-color:transparent;
+}
+
+#main_nav ul li a:active {
+	border-bottom:3px solid #f04124;
+	background-color:transparent;
+}
+
+
 
 .top-bar #top_bar_hide {
 	display:none;
@@ -93,12 +111,15 @@ header .row {
 
 #shopping_p {
 	color:#fff;
+	font-family: 'Roboto Slab', serif;
 }
 
 button.small, .button.small {
 	padding-top:10px;
 	padding-bottom:10px;
 }
+
+
 
 /******************************* 
 	MISSION STATEMENT STYLES
@@ -111,16 +132,39 @@ button.small, .button.small {
 	width: 100%;
 }
 
-/*.ms */h3 {
+/*.ms h3 {
 	background-image: url('../img/red_bg.png');
 	background-repeat: no-repeat;
 	margin: 80px 0 30px 100px;
+}*/
+
+.red_heading {
+	background-image: url('../img/red_bg.png');
+	background-repeat: no-repeat;
+	font-size: 26px;
+	min-height: 61px;
+	padding-left: 20px;
+	padding-top: 11px;
+	width: 50%;
+	/* margin: 0 auto; */
+	margin-top: 97px;
+	margin-left: 122px;
+	font-family: 'Roboto Slab', serif;
+	
+
 }
 
-.ms p {
-	margin-left: 100px;
+.ms_p {
+	
 	width: 600px;
+	
+	width: 73%;
 	font-size: 1.25em;
+	/*padding-left: 164px;*/
+	line-height: 2.3;
+	margin: 0 auto;
+	text-shadow: 3px 3px 14px #111;
+
 }
 
 /******************************* 
@@ -229,7 +273,7 @@ footer {
 .showAll9  {
 	display: none;
 }
-<<<<<<< HEAD
+
 /******************************* 
 		Contact Page
 *******************************/
@@ -253,8 +297,36 @@ textarea {
 	header {
 
 	  	height: 480px;
+	  	width: 100%;
 	  
 	}
+
+
+	#main_nav ul li a {
+	font-size: 13px;
+	
+
+	}
+
+	#main_nav ul li {
+	margin-right: .3em;
+	}
+	.button.small {
+	/*width: 109px;*/
+	padding-right:5px;
+	padding-left:5px;
+	}
+
+	.ps_img {
+		margin-left: -48px;
+	}
+
+	.ps_des {
+		text-align: left;
+	}
+
+
+
 
 	
 }
@@ -262,21 +334,26 @@ textarea {
 
 @media (max-width: 768px) {
 
+	body {
+	background: none; 
+	background-color:#000;
+	}
+
 	#main_nav ul li {
 		margin-right:0em;
 	}
 
 	#main_nav ul li a {
-		font-size:13px;
+		font-size: 10px;
 	}
 
 	.top-bar-section li:not(.has-form) a:not(.button) {
-	padding: 0 14px;
-
+	padding: 0 11px;
 	}
 
 	.ms {
 	background-image:none;
+	height: auto;
 	}
 
 	header {
@@ -285,9 +362,21 @@ textarea {
 	 
 	}
 
-	.ms h3 {
+	.red_heading {
+	
+	margin-top: 30px;
+	margin-left: 99px;
+	
+	}
 
-	/*margin: 32px 0 30px 100px;*/
+	.fi-shopping-cart {
+	font-size: 24px;
+	}
+
+	.button.small {
+	width: 109px;
+	padding-right:5px;
+	padding-left:5px;
 	}
 
 	#footnav li {
@@ -380,6 +469,13 @@ textarea {
 	width: 100%;
 	}
 
+	.red_heading {
+		font-size: 18px;
+		margin-top:0px;
+		margin-left:0px;
+		width:100%;
+	}
+
 
 
 	.ms {
@@ -387,12 +483,21 @@ textarea {
 	height: auto;
 	}
 
-	.ms p {
+	.ms_p {
+	
+	width: 83%;
+
+	/* padding-left: 164px; */
+	line-height: 2;
+	
+	}
+
+	/*.ms p {
 	margin-left: 0px;
 	width: 90%;
 	font-size: 1em;
 	margin: 0 auto;
-	}
+	}*/
 
 	/*.ms h3 {
 	margin: 32px 0 30px 0px;
@@ -400,10 +505,10 @@ textarea {
 
 	}*/
 
-	h3 {
+	/*h3 {
 	margin: 32px 0 32px 13px;
 	margin-top: 0px;
-	}
+	}*/
 
 	.ps {
 	margin-top:50px;
@@ -461,4 +566,27 @@ textarea {
 	
 
 
+}
+
+
+@media (max-width: 320px) {
+
+	header {
+
+	height: 248px;
+
+	}
+
+	.red_heading {
+		width: 100%;
+	}
+
+	.ms_p {
+
+	width: 88%;
+
+	line-height: 1.5;
+
+	}
+	
 }
