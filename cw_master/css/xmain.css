@@ -7,7 +7,7 @@ body {
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-	font-family: Helvetica, sans-serif;
+	font-family: 'Cinzel', serif;
 	color: #fff;
 }
 
@@ -56,9 +56,8 @@ body {
 header {
 	background: url(../img/header-img.jpg) no-repeat; 
   	background-size: 100%;
-  	height: 592px;
-
-	width: 88%;
+  	height: 689px; /*623*/
+	width: 92%;
 	margin: 0 auto;
   	margin-bottom: 0px;
 }
@@ -138,6 +137,8 @@ button.small, .button.small {
 	margin: 80px 0 30px 100px;
 }*/
 
+
+
 .red_heading {
 	background-image: url('../img/red_bg.png');
 	background-repeat: no-repeat;
@@ -154,16 +155,23 @@ button.small, .button.small {
 
 }
 
+.ps .red_heading {
+	margin-top: 50px;
+	margin-left: 10px;
+
+}
+
 .ms_p {
 	
-	width: 600px;
 	
 	width: 73%;
-	font-size: 1.25em;
-	/*padding-left: 164px;*/
-	line-height: 2.3;
+	font-size: 1.2em;
+	font-family: 'Cinzel', serif;
+	/* padding-left: 164px; */
+	line-height: 2.5;
 	margin: 0 auto;
-	text-shadow: 3px 3px 14px #111;
+	/* margin-bottom: 0px; */
+	text-shadow: 3px 3px 14px #000;
 
 }
 
@@ -177,7 +185,7 @@ button.small, .button.small {
 }*/
 
 .news-deets {
-	margin-left: 75px;
+	
 	margin-top: 63px;
 }
 
@@ -323,7 +331,7 @@ textarea {
 	}
 
 	.ps_img {
-		margin-left: -48px;
+		margin-left: -22px;
 	}
 
 	.ps_des {
@@ -349,7 +357,7 @@ textarea {
 	}
 
 	#main_nav ul li a {
-		font-size: 10px;
+		font-size: 11px;
 	}
 
 	.top-bar-section li:not(.has-form) a:not(.button) {
@@ -361,6 +369,18 @@ textarea {
 	height: auto;
 	}
 
+	.red_heading {
+	margin-top: 50px;
+	margin-left: 91px;
+
+	}
+
+	.ps .red_heading {
+	margin-top: 50px;
+	margin-left: 91px;
+
+	}
+
 	header {
 		
 	  	height: 353px;
@@ -369,8 +389,8 @@ textarea {
 
 	.red_heading {
 	
-	margin-top: 30px;
-	margin-left: 99px;
+	margin-top: 50px;
+	margin-left: 91px;
 	
 	}
 
@@ -389,12 +409,18 @@ textarea {
 	padding-right: .5rem;
 	padding-left: .5rem;
 
-}
+	}
 
 	#footnav li a {
 	color: #fff;
 	font-size:14px;
-}
+	}
+
+	.social li {
+	display: inline-block;
+	padding-right: .5rem;
+	padding-left: .5rem;
+	}
 
 
 
@@ -443,6 +469,11 @@ textarea {
 
 	}
 
+	#main_nav ul li {
+
+	padding-bottom: 22px;
+	}
+
 	#main_nav ul li a {
 		margin-right: 3px;
 
@@ -476,9 +507,14 @@ textarea {
 
 	.red_heading {
 		font-size: 18px;
-		margin-top:0px;
+		margin-top: 36px;
 		margin-left:0px;
 		width:100%;
+	}
+
+	.ps .red_heading {
+	margin-top: -27px;
+	margin-left: 0px;
 	}
 
 
@@ -592,6 +628,15 @@ textarea {
 
 	line-height: 1.5;
 
+	}
+
+	h4 {
+	width: 212px;
+	display: inline-block;	
+	}
+
+	.news-deets {
+		margin-top:0px;
 	}
 	
 }
