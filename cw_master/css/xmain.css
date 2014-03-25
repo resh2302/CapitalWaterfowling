@@ -176,6 +176,25 @@ button.small, .button.small {
 }
 
 /******************************* 
+		Home News
+*******************************/
+
+#timeline {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 80%;
+	height: 100%;
+}
+
+#issues li p {
+	font-family:arial;
+}
+
+/*#dates li {
+	width:50%;
+}*/
+
+/******************************* 
 		NEWS STYLES
 *******************************/
 /*.news {
