@@ -34,7 +34,11 @@
              <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li> 
            </ul>
             <section class="top-bar-section"> <!-- Right Nav Section --> 
-              <ul class="right"> 
+              <?php if (isset($primary_links)) : ?>
+              <?php print theme('links', $primary_links, array('class' => 'links primary-links')) ?>
+              <?php endif; ?>
+
+              <!-- <ul class="right"> 
                 <li><a href="home.html">Home</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="prostaff.html">Pro Staff</a></li>
@@ -42,7 +46,7 @@
                 <li><a href="store.html">Store</a></li>
                 <li><a href="contact.html">Contact</a></li>
                
-            </ul> <!-- Left Nav Section --> 
+            </ul> Left Nav Section -->
          
             </section> 
           </nav>
